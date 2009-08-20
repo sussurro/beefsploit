@@ -1,7 +1,7 @@
-* copy beefsploit/loadxmlrpc.rc into your metasploit dir
-* under your metasploit tree, under lib/msf/core/rpc/ patch beefsploit/modules.rb.diff into modules.rb (hopefully this will get fixed in svn soon)
-* edit loadxmlrpc.rc to choose a better password
-* run ./msfconsole -r loadxmlrpc.rc
-* return to your BeEF directory
-* edit include/msf.inc.php and update it with the approriate values
-* login, to BeEF and have fun
+INSTALL:
+ patch -p1 < beefsploit.patch
+ edit include/msf.inc.php and update it with the approriate values
+
+RUNNING:
+load metasploit, type in load xmlrpc Pass=<password from msf.inc.php>
+Log in to BeEF and test
