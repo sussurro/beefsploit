@@ -41,6 +41,7 @@ This module launches a Metasploit listener that attempts to quietly steal SMB Ch
 
 		<div id="module_subsection_header">Options</div>
 		<hr>
+		<div id="module_subsection_header">SRVHOST (Required)</div>
 		<input type="text" name="SRVHOST" value="0.0.0.0"/>
 		<div id="module_subsection_header">SRVPORT (Required)</div>
 		<input type="text" name="SRVPORT" value="8080"/>
