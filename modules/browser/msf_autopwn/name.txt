@@ -1,1 +1,1 @@
-xplt: Metasploit Browser Autopwn
+metasploit browser autopwn
