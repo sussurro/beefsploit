@@ -134,7 +134,7 @@
         }
 
 
-        function msf_callAutopwn()
+        function msf_callAuxiliary()
         {
                 var opts = "";
                 for(i = 0; i < document.myform.elements.length; i++)

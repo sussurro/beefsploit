@@ -44,7 +44,9 @@ if($_REQUEST["call"])
 		}
 	}elseif($call == 2)
 	{
-		if(callAutopwn($sock,$token,$options) === FALSE)
+		$name = $options["MSFAUXILIARY"];
+		unset($options["MSFAUXILIARY"]);
+		if(callAuxiliary($sock,$token,$name,$options) === FALSE)
 		{
 			print "fail";
 		}else{
@@ -247,10 +249,9 @@ function getPayloads($sock,$token,$exploit)
 }
 
 	
-	
-function callAutopwn($sock,$token,$options)
+function callAuxiliary($sock,$token,$name,$options)
 {
-	if(!$sock || !$token || !$options || !is_array($options))
+	if(!$sock || !$token || !$name || !$options || !is_array($options))
 	{
 		return FALSE;
 	}
@@ -267,7 +268,7 @@ function callAutopwn($sock,$token,$options)
 	$msg = new xmlrpcmsg("module.execute",
 		array(  new xmlrpcval($token,"string"),
 			new xmlrpcval("auxiliary","string"),
-			new xmlrpcval("server/browser_autopwn","string"),
+			new xmlrpcval($name,"string"),
 			$optval));
 
 	$string = $msg->serialize() . "\0";
