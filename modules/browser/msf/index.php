@@ -1,7 +1,9 @@
 <?
-	// Copyright (c) 2006, Wade Alcorn 
-	// All Rights Reserved
-	// wade@bindshell.net - http://www.bindshell.net
+        // Copyright (c) 2009, Ryan Linn (sussurro@happypacket.net)
+        // All Rights Reserved
+        // Template for code by:
+        // wade@bindshell.net - http://www.bindshell.net
+
 
 	require_once("../../../include/common.inc.php"); // included for get_b64_file()
 	DEFINE('JS_FILE', './template.js');

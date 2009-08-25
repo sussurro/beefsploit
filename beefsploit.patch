@@ -1,10 +1,11 @@
---- origbeef/ui/index.php	2007-04-03 22:57:48.000000000 -0400
-+++ beef/ui/index.php	2009-08-18 23:57:12.000000000 -0400
-@@ -48,6 +48,7 @@
- 	<script src="../js/autorun.js" type="text/javascript"></script>
+--- beef.orig/ui/index.php	2009-08-23 18:51:38.000000000 -0400
++++ beef/ui/index.php	2009-08-24 23:25:46.000000000 -0400
+@@ -55,6 +55,8 @@
  	<script src="../js/zombie.js" type="text/javascript"></script>
  	<script src="../js/module.js" type="text/javascript"></script>
+ 	<script src="../js/log.js" type="text/javascript"></script>
 +	<script src="../js/msf.js" type="text/javascript"></script>
- 
++
+         
  <?php
  	// config check

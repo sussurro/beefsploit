@@ -8,7 +8,7 @@ function do_main(){
 	iframe.setAttribute("style", "visibility:hidden;");
 	document.body.appendChild(iframe);
 
-	return "Request Sent";
+	return "Launched Browser AutoPWN";
 }
 
 return_result(result_id, do_main());
