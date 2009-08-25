@@ -1,7 +1,8 @@
 INSTALL:
  patch -p1 < beefsploit.patch
- edit include/msf.inc.php and update it with the approriate values
+ Edit include/msf.inc.php and update it with the approriate values
+ Move the beefsploit.rc into your Metasploit directory
 
 RUNNING:
-load metasploit, type in load xmlrpc Pass=<password from msf.inc.php>
-Log in to BeEF and test
+ From the Metasploit directory, type in ./msfconsole -r beefsploit.rc
+ Log in to BeEF and test
